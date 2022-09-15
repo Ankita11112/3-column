@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3-column preview card component</title>
+    <link rel="icon" href="Images/favicon-32x32.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Lexend+Deca&display=swap');
+     body{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        /* flex-wrap:wrap; */
+     }
+        .box {
+            margin-top: 140px;
+            height: 420px;
+            width: 800px;
+            display:flex;
+            flex-wrap:wrap;
+         }
+         .orange{
+            width: 266px;
+            text-align: center;
+           background-color:hsl(31, 77%, 52%);
+            
+         }
+         .orange h1{
+            margin-top: 20px; 
+            margin-right: 100px;
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display', cursive;
+            color:hsl(0, 0%, 95%);  
+         }
+         .orange p{
+            margin-top: 20px; 
+            margin-left: 40px;
+            margin-right: 40px;
+            Font-size: 12px;
+            font-family: 'Lexend Deca', sans-serif;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-align: left;
+            color:hsla(0, 0%, 100%, 0.75);
+         }
+         .orange img{
+            margin-top: 40px;
+            padding-right: 20px;
+            margin-right:100px;
+         }
+         .orange button{
+            margin-top: 20px;
+            margin-right: 60px;
+            padding: 10px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border:2px solid white;
+            border-radius:20px;
+            margin-top: 70px;
+            background-color: hsl(31, 77%, 52%);
+            color:hsl(0, 0%, 95%);
+         }
+         .cyan{
+            width: 266px;
+            text-align: center;
+            background-color:hsl(184, 100%, 22%);
+         }
+         .cyan h1{
+            margin-top: 20px; 
+            margin-right: 120px;
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display', cursive;
+            color:hsl(0, 0%, 95%);  
+         }
+         .cyan p{
+            margin-top: 20px; 
+            margin-left: 40px;
+            margin-right: 40px;
+            Font-size: 12px;
+            font-family: 'Lexend Deca', sans-serif;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-align: left;
+            color:hsla(0, 0%, 100%, 0.75);
+         }
+         .cyan img{
+            margin-top: 40px;
+            padding-right: 20px;
+            margin-right:100px;
+         }
+         .cyan button{
+            /* margin-top: 20px; */
+            margin-right: 60px;
+            padding: 10px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border:2px solid white;
+            border-radius:20px;
+            margin-top: 70px;
+            background-color:hsl(184, 100%, 22%) ;
+            color:hsl(0, 0%, 95%);
+         }
+         .dark-cyan{
+            width: 266px;
+            text-align: center;
+            background-color: hsl(179, 100%, 13%); 
+         }
+         .dark-cyan h1{
+            margin-top: 20px; 
+            margin-right: 100px;
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display', cursive;
+            color:hsl(0, 0%, 95%);  
+         }
+         .dark-cyan p{
+            /* margin-top: 20px;  */
+            margin-left: 40px;
+            margin-right: 40px;
+            Font-size: 12px;
+            font-family: 'Lexend Deca', sans-serif;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-align: left;
+            color:hsla(0, 0%, 100%, 0.75);
+         }
+         .dark-cyan img{
+            margin-top: 40px;
+            padding-right: 20px;
+            margin-right:100px;
+         }
+         .dark-cyan button{
+            /* margin-top: 20px; */
+            margin-right: 60px;
+            padding: 10px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border:2px solid white;
+            border-radius:20px;
+            margin-top: 70px;
+            background-color: hsl(179, 100%, 13%);
+            color:hsl(0, 0%, 95%); 
+            } 
+            @media screen and (max-width:550px)
+             {
+               body{
+                  height: 180vh;
+                  /* background-color: pink; */
+               }
+               .box{
+                  height: 80vh;
+                  width:70vw;
+                  /* flex-direction:column;   */
+               }
+               .orange,
+               .cyan,
+               .dark-cyan{
+                  height: 35%;
+                  width:100%;
+               }
+            
+            }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="orange">
+     <img src="Images/icon-sedans.svg" alt="sedans">   
+     <h1>Sedans</h1>
+     <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="cyan">
+        <img src="Images/icon-suvs.svg" alt="suvs">
+     <h1>SUVs</h1>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+        <button>Learn More</button>
+    </div>
+    <div class="dark-cyan">
+        <img src="Images/icon-luxury.svg"  alt="luxury">
+     <h1>Luxury</h1>
+     <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+     <button>Learn More</button>
+    </div>
+    </div>
+</body>
+</html>
